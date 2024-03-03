@@ -1,4 +1,4 @@
-# ListasExerciciosSENAI
+# Listas Exercicios SENAI
 
 Este repositório contém as listas de exercícios realizadas pelo aluno Victor Miguel da Silva durante o curso de Front-end no SENAI Maracanã. É uma abordagem para aprendizado e prática de conceitos importantes em desenvolvimento web.
 Senai Maracanã Manhã EAD Front-End.
