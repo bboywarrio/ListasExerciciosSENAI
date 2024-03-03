@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio 02 Lista 2 SENAI!</title>
+</head>
+<body>
+    <h1>Victor Miguel da Silva</h1>
+    <script>
+        var numero1, numero2, numero3;
+
+        do {
+            numero1 = parseFloat(prompt("Digite o primeiro número:"));
+        } while (isNaN(numero1)); // Verifica se o valor não é um número
+
+        do {
+            numero2 = parseFloat(prompt("Digite o segundo número:"));
+        } while (isNaN(numero2)); // Verifica se o valor não é um número
+
+        do {
+            numero3 = parseFloat(prompt("Digite o terceiro número:"));
+        } while (isNaN(numero3)); // Verifica se o valor não é um número
+
+        var maiorNumero;
+        var mensagem;
+
+        if (numero1 >= numero2 && numero1 >= numero3) {
+            maiorNumero = numero1;
+            mensagem = "primeiro";
+        } else if (numero2 >= numero1 && numero2 >= numero3) {
+            maiorNumero = numero2;
+            mensagem = "segundo";
+        } else {
+            maiorNumero = numero3;
+            mensagem = "terceiro";
+        }
+
+        alert("O maior número inserido foi o " + mensagem + ": " + maiorNumero);
+    </script>
+</body>
+</html>

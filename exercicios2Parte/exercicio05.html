@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio 05 List 2 SENAI!</title>
+</head>
+<body>
+    <h1>Victor Miguel da Silva</h1>
+    <script>
+        var numero;
+        do {
+            numero = prompt("Digite um número inteiro:");
+          
+            if (isNaN(numero) || !Number.isInteger(parseFloat(numero))) {
+                alert("Por favor, digite um número inteiro válido.");
+            }
+        } while (isNaN(numero) || !Number.isInteger(parseFloat(numero)));
+
+        numero = parseInt(numero);
+
+        if (numero % 2 === 0) {
+            alert("O número digitado é par.");
+        } else {
+            alert("O número digitado é ímpar.");
+        }
+    </script>
+</body>
+</html>

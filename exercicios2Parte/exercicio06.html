@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio 06 Lista 2 SENAI!</title>
+    <style>
+        /* Estilo para remover sublinhado de links */
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.linkedin.com/in/victor-miguel-da-silva-28923b242/" target="_blank">
+        <h2>Victor Miguel da silva</h2>
+    </a>
+    <h1>Exercícios propostos pelo SENAI![Lista 1 e 2 nas respectivas pastas]</h1>
+    <script>
+        var salario = parseFloat(prompt("Digite o salário do colaborador:"));
+
+        var percentual, aumento, novoSalario;
+
+        if (salario <= 280) {
+            percentual = 20;
+        } else if (salario <= 700) {
+            percentual = 15;
+        } else if (salario <= 1500) {
+            percentual = 10;
+        } else {
+            percentual = 5;
+        }
+
+        aumento = (salario * percentual) / 100;
+        novoSalario = salario + aumento;
+
+        alert("Salário : R$" + salario.toFixed(2) +
+              "\nPercentual de aumento aplicado: " + percentual + "%" +
+              "\nValor do aumento: R$" + aumento.toFixed(2) +
+              "\nNovo salário, após o aumento/reajuste: R$" + novoSalario.toFixed(2));
+    </script>
+</body>
+</html>
